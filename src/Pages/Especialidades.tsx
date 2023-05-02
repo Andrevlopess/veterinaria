@@ -6,22 +6,22 @@ import { especialidades } from "../Utils/Especialidades";
 
 export default function EspecialidadesPage() {
     return (
-        <div className="font-display">
+        <div className="font-display bg-gradient-to-r from-cyan-500 to-blue-500 ">
             <Header />
             <div className="items-center flex flex-col my-10 p-6">
-                <text className="text-7xl text-dark-green my-10">
+                <text className="md:text-7xl text-5xl text-white my-10">
                     Especialidades
                 </text>
 
-                <div className="grid md:grid-cols-3">
-                    {especialidades.map((esp) => {
+                <div className="grid lg:grid-cols-3 sm:grid-cols-2">
+                    {especialidades.map((esp, index) => {
                         return (
-                            <EspecialidadeCard esp={esp} />
+                            <EspecialidadeCard esp={esp} key={index}/>
                         )
                     })}
 
                 </div>
-                <text className="text-xl text-dark-green my-16 ">
+                <text className="text-xl text-white my-16 text-center">
                     Serviços especializados como clinico geral e também serviços terceirados como radiologia, ortopedia e ultrassonografia.
                 </text>
 

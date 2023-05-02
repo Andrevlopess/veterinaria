@@ -6,7 +6,7 @@ type Props = {
 
 export default function MainJobsCard({ job }: Props) {
     return (
-        <div className="flex flex-col m-5 shadow-xl rounded-sm hover:shadow-5xl hover:scale-105 transition ">
+        <div className="flex flex-col m-5 shadow-xl rounded-sm hover:shadow-5xl hover:scale-105 transition ease-out">
             <img src={job.img} alt={`${job.title} image`}/>
             <div className="p-4 flex flex-col">
                 <text className="text-3xl text-dark-green py-10">{job.title}</text>

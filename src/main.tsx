@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import EspecialidadesPage from './Pages/Especialidades.tsx';
 import EspecialidadesDetails from './Pages/EspecialidadeDetails.tsx';
+import AboutUsPage from './Pages/AboutUs.tsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/especialidadesDetail",
     element: <EspecialidadesDetails/>
+  },
+  {
+    path: "/sobreNós",
+    element: <AboutUsPage/>
   },
 ]);
 

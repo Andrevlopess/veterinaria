@@ -14,6 +14,7 @@ export default {
       },
       boxShadow:{
         '5xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        'underline' : '0 4px 0px #fff '
       }
     },
   },

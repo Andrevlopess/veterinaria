@@ -9,12 +9,12 @@ export default function EspecialidadesDetails() {
 
 
     return (
-       <div className='font-display'>
+       <div className='font-display bg-gradient-to-b from-cyan-500 to-cyan-600'>
         <Header/>
          <div className='flex justify-evenly items-center my-40 flex-wrap'>
             <div className='flex flex-col max-w-2xl mx-12'>
-                <text className='text-5xl text-dark-green pb-10'>{data.title}</text>
-                <text className='text-3xl text-dark-green'>{data.description}</text>
+                <text className='text-5xl text-white pb-10'>{data.title}</text>
+                <text className='text-3xl text-white'>{data.description}</text>
             </div>
             <img src={data.img} alt={`${data.title} image`}/>
          </div>
