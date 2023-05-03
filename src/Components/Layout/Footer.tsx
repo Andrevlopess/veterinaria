@@ -11,7 +11,7 @@ export default function Footer() {
       <div className=" m-4 justify-center items-center flex">
         <img src={React} />
       </div>
-      <div className="flex flex-col  m-4 justify-center items-center">
+      <div className="flex flex-col  m-4 justify-start items-center">
         <text className="text-white text-2xl">Av. fictícia, 000, Jundiaí, SP</text>
         <div className="flex flex-col mt-4">
           <text className="text-2xl text-slate-100">
@@ -44,7 +44,7 @@ export default function Footer() {
           })}
         </ul>
       </div>
-      <div className="flex flex-col  m-4 justify-center items-center">
+      <div className="flex flex-col  m-4 justify-start items-center">
         <text className="text-slate-100 text-2xl">Contatos</text>
         <text className="text-slate-100">(11) 91234-5678</text>
         <text className="text-slate-100">(11) 98765-4321</text>

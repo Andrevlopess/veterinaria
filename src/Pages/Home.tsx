@@ -1,13 +1,13 @@
 import MainJobsCard from "../Components/Cards/MainJobsCard";
 import "../Styles/index.css"
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import DogBanner from '../assets/DogBanner.svg'
 import { mainJobs } from "../Utils/MainJobs";
 import Header from "../Components/Layout/Header";
 import Footer from "../Components/Layout/Footer";
 import { useInView, animated } from '@react-spring/web'
-import {FiChevronRight} from 'react-icons/fi'
-import { depoimentos} from "../Utils/Depoimentos";
+import { FiChevronRight } from 'react-icons/fi'
+import { depoimentos } from "../Utils/Depoimentos";
 import DepoimentoCard from "../Components/Cards/DepoimentoCard";
 
 function Home() {
@@ -23,7 +23,7 @@ function Home() {
         <div className="pt-8 flex flex-wrap-reverse justify-around">
           <img src={DogBanner} alt="React Logo" />
           <animated.div
-            
+
             style={{
               opacity: inViewText ? 1 : 0,
               y: inViewText ? -10 : 0,
@@ -33,11 +33,11 @@ function Home() {
             className="flex flex-col p-10 gap-4 sm:w-1/2 w-full items-start ">
             <text className="text-4xl sm:text-6xl text-white">Centro médico veterinário André</text>
             <text className="text-2xl sx:text-4xl text-white">Onde seu animal de estimação é nosso maior cuidado e responsabilidade, com muito amor e comprometimentos cuidamos do seu animal de estimação!</text>
-            <button 
-            onClick={() => nav("/agendar-consulta")}
-            className="px-6 py-4 gap-4 bg-blue-700 rounded-sm flex justify-between items-center">
+            <button
+              onClick={() => nav("/agendar-consulta")}
+              className="px-6 py-4 gap-4 bg-blue-700 rounded-sm flex justify-between items-center">
               <text className="text-white">Agendar consulta</text>
-              <FiChevronRight size={20} color="#fff"/>
+              <FiChevronRight size={20} color="#fff" />
             </button>
           </animated.div>
         </div>
@@ -51,15 +51,25 @@ function Home() {
           })}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 border-y-2 p-6">
-          {
-            depoimentos.map(dep => {
-              return(
-                <DepoimentoCard dep={dep} key={dep.id}/>
-              )
-            })
-          }
+        <div className="flex items-center py-10 flex-wrap sm:flex-nowrap justify-center">
+          <div className="flex flex-col">
+            <text className="text-4xl sm:text-9xl text-white mx-10 font-bold italic">DE</text>
+            <text className="text-4xl sm:text-9xl text-white mx-10 font-bold italic">POI</text>
+            <text className="text-4xl sm:text-9xl text-white mx-10 font-bold italic">MEN</text>
+            <text className="text-4xl sm:text-9xl text-white mx-10 font-bold italic">TOS</text>
+
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 p-6">
+            {
+              depoimentos.map(dep => {
+                return (
+                  <DepoimentoCard dep={dep} key={dep.id} />
+                )
+              })
+            }
+          </div>
         </div>
+
 
 
 

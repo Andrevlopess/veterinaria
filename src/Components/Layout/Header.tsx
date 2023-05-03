@@ -11,7 +11,7 @@ export default function Header() {
 
 
   return (
-    <div className="flex md:justify-around justify-between items-center p-10 shadow-lg border-b-2 ">
+    <div className="flex md:justify-around justify-between items-center p-10 border-b-2 ">
       <button
         onClick={() => navigate("/")}
       >logo</button>

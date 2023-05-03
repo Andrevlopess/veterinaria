@@ -26,17 +26,4 @@ export const depoimentos: IDepoi[] = [
         authorImage: "https://bit.ly/sage-adebayo",
         depoiment: "Lorem ipsum,or sit amet consectetur adipisicing elit. Earum placeat mollitia molestias, consequatur recusandae ducimus corporis accusantium veniam doloremque quaerat unde, eligendi voluptate voluptas. Incidunt consectetur perspiciatis dicta inventore maiores."
     },
-    {
-        id: 5,
-        authorName: "Luis Cláudio",
-        authorImage: "https://bit.ly/dan-abramov",
-        depoiment: "Lorem ipsum, dolor recusandae ducimus corporis accusantium veniam doloremque quaerat unde, eligendi voluptate voluptas. Incidunt consectetur perspiciatis dicta inventore maiores."
-    },
-    {
-        id: 6,
-        authorName: "Matheus Baroni",
-        authorImage: "https://bit.ly/dan-abramov",
-        depoiment: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum placeat mollitia molestias, consequatur recusandae ducimus corporis accusantium veniam doloremque quaerat unde, eligendi voluptate voluptas. Incidunt consectetur perspiciatis dicta inventore maiores."
-    },
-
 ]
