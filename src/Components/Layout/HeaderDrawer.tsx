@@ -17,23 +17,23 @@ export default function HeaderDrawer ({closeHeader,isOpen} : Props) {
           className='flex justify-end items-center p-4'
           onClick={() => closeHeader(!isOpen)}
           >
-            <GrClose color="#024953" size={25}/>
+            <GrClose color="#000" size={25}/>
           </button>
             <button
-          onClick={() => navigate("/sobreNós")}
-          className="text-dark-green boredr-2 border-b-dark-green text-xl hover:shadow-underline py-2">Sobre nós</button>
+          onClick={() => navigate("/sobre-nós")}
+          className="text-zinc-900 boredr-2 border-b-zinc-900 text-xl hover:shadow-underline py-2">Sobre nós</button>
 
         <button
           onClick={() => navigate("/especialidades")}
 
-          className="text-dark-green boredr-2 border-b-dark-green text-xl hover:shadow-underline py-2">Especialidades</button>
+          className="text-zinc-900 boredr-2 border-b-zinc-900 text-xl hover:shadow-underline py-2">Especialidades</button>
 
         <button
-          onClick={() => navigate("/sobreNós")}
-          className="text-dark-green boredr-2 border-b-dark-green text-xl hover:shadow-underline py-2"
+          onClick={() => navigate("/agendar-consulta")}
+          className="text-zinc-900 boredr-2 border-b-zinc-900 text-xl hover:shadow-underline py-2"
         >
 
-          <text className="text-dark-green boredr-2 border-b-dark-green text-xl">Agendar Consulta</text>
+          <text className="text-zinc-900 boredr-2 border-b-zinc-900 text-xl">Agendar Consulta</text>
 
         </button>
         </div>

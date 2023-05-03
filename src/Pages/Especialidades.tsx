@@ -6,11 +6,11 @@ import { especialidades } from "../Utils/Especialidades";
 
 export default function EspecialidadesPage() {
     return (
-        <div className="font-display bg-gradient-to-r from-cyan-500 to-blue-500 ">
+        <div className="font-display bg-gradient-to-r from-blue-500 to-blue-600 ">
             <Header />
             <div className="items-center flex flex-col my-10 p-6">
                 <text className="md:text-7xl text-5xl text-white my-10">
-                    Especialidades
+                   Nossas especialidades
                 </text>
 
                 <div className="grid lg:grid-cols-3 sm:grid-cols-2">

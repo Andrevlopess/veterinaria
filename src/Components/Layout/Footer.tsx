@@ -1,7 +1,11 @@
 import { especialidades } from "../../Utils/Especialidades"
 import React from '../../assets/react.svg'
+import {useNavigate} from 'react-router-dom'
 
 export default function Footer() {
+
+  const nav = useNavigate();
+
   return (
     <footer className="grid md:grid-cols-4 sm:grid-cols-2 p-10 border-t-2 border-white flex-wrap">
       <div className=" m-4 justify-center items-center flex">
@@ -26,11 +30,16 @@ export default function Footer() {
           Especialidades
         </text>
         <ul className="list-disc">
-          {especialidades.map(esp => {
+          {especialidades.map((esp,i) => {
             return (
-              <li className="text-white pl-2">
+              <button
+              className="block"
+              onClick={()=> nav("/especialidade", { state: esp })}>
+                <li className="text-white pl-2" key={i}>
                 {esp.title}
               </li>
+              </button>
+              
             )
           })}
         </ul>

@@ -11,13 +11,13 @@ export default function Header() {
 
 
   return (
-    <div className="flex md:justify-around justify-between items-center p-10 shadow-lg">
+    <div className="flex md:justify-around justify-between items-center p-10 shadow-lg border-b-2 ">
       <button
         onClick={() => navigate("/")}
       >logo</button>
       <div className="hidden md:flex gap-6 items-center">
         <button
-          onClick={() => navigate("/sobreNós")}
+          onClick={() => navigate("/sobre-nós")}
           className="text-white text-xl hover:shadow-underline py-2">Sobre nós</button>
 
         <button
@@ -26,7 +26,7 @@ export default function Header() {
           className="text-white text-xl hover:shadow-underline py-2">Especialidades</button>
 
         <button
-          onClick={() => navigate("/sobreNós")}
+          onClick={() => navigate("/agendar-consulta")}
           className="text-white text-xl hover:shadow-underline py-2"
         >
 

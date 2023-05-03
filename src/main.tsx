@@ -8,6 +8,7 @@ import {
 import EspecialidadesPage from './Pages/Especialidades.tsx';
 import EspecialidadesDetails from './Pages/EspecialidadeDetails.tsx';
 import AboutUsPage from './Pages/AboutUs.tsx';
+import AgendarConsulta from './Pages/AgendarConsulta.tsx';
 
 const router = createBrowserRouter([
   {
@@ -19,12 +20,16 @@ const router = createBrowserRouter([
     element: <EspecialidadesPage/>
   },
   {
-    path: "/especialidadesDetail",
+    path: "/especialidade",
     element: <EspecialidadesDetails/>
   },
   {
-    path: "/sobreNós",
+    path: "/sobre-nós",
     element: <AboutUsPage/>
+  },
+  {
+    path: "/agendar-consulta",
+    element: <AgendarConsulta/>
   },
 ]);
 

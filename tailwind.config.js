@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Tilt Warp", "cursive"],
+        display: ["Poppins", "sans-serif"],
       },
       colors:{
         'dark-green': "#024953",

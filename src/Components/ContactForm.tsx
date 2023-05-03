@@ -1,27 +1,50 @@
+
+
 export default function ContactForm() {
+
+
     return (
-        <div className="grid gap-8 my-6 md:grid-cols-2 p-4 bg-cyan-700 rounded-md shadow-2xl">
+        <div className="rounded-md shadow-2xl border-4 border-blue-400 p-4 flex flex-col gap-10">
+            <text className="lg:text-5xl text-4xl text-slate-100 mt-10 text-center">Agende sua consulta</text>
 
-            <div className="md:col-span-2 flex flex-col">
-                <label htmlFor="first_name" className="mb-2 text-lg text-slate-100">Nome</label>
-                <input type="text" id="first_name" className="text-dark-green rounded-md p-2 outline-none border-none" />
-            </div>
+            <div className="grid gap-8 my-6 lg:grid-cols-2">
 
-            <div className="flex flex-col">
-                <label htmlFor="first_name" className="mb-2 text-lg text-slate-100">Email</label>
-                <input type="text" id="first_name" className="text-dark-green rounded-md p-2 outline-none border-none" />
-            </div>
+                <div className="lg:col-span-2 flex flex-col">
+                    <label htmlFor="name" className="font-semibold mb-2 text-lg text-slate-100">Nome</label>
+                    <input
+                        
+                        type="text"
+                        id="name"
+                        className="text-zinc-900 rounded-md p-2 outline-none border-none" />
+                </div>
 
-            <div className="flex flex-col">
-                <label htmlFor="first_name" className="mb-2 text-lg text-slate-100">Telefone</label>
-                <input type="text" id="first_name" className="text-dark-green rounded-md p-2 outline-none border-none" />
-            </div>
+                <div className="flex flex-col">
+                    <label htmlFor="email" className="font-semibold mb-2 text-lg text-slate-100">Email</label>
+                    <input 
+                    
+                    type="text" id="email" className="text-zinc-900 rounded-md p-2 outline-none border-none" />
+                </div>
 
-            <div className="md:col-span-2 flex flex-col ">
-                <label htmlFor="first_name" className="mb-2 text-lg text-slate-100">Deixe sua mensagem</label>
-                <textarea id="first_name" className="text-dark-green rounded-md p-2 outline-none border-none max-h-96" />
+                <div className="flex flex-col">
+                    <label htmlFor="tel" className="font-semibold mb-2 text-lg text-slate-100">Telefone</label>
+                    <input 
+                   
+                    type="tel" 
+                    id="tel" 
+                    className="text-zinc-900 rounded-md p-2 outline-none border-none" />
+                </div>
+
+                <div className="lg:col-span-2 flex flex-col ">
+                    <label htmlFor="first_name" className="font-semibold mb-2 text-lg text-slate-100">
+                        Informe o motivo da sua consulta
+                    </label>
+                    <textarea
+                   
+                     id="first_name" className="text-zinc-900 rounded-md p-2 outline-none border-none max-h-96" />
+                </div>
+                <button className="lg:col-span-2 text-slate-100 bg-blue-700 border-2 border-blue-400 p-6 rounded-md text-xl">Enviar</button>
             </div>
-            <button className="md:col-span-2 text-slate-100 bg-cyan-950 p-6 rounded-md text-xl">Enviar</button>
         </div>
+
     )
 }
