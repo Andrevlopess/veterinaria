@@ -8,7 +8,6 @@ type Props = {
 
 export default function DepoimentoCard({ dep }: Props) {
 
-    const navigate = useNavigate();
 
     const [ref, inView] = useInView();
 
