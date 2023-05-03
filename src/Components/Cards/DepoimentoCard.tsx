@@ -1,5 +1,4 @@
 import { IDepoi } from "../../Types/Depoimentos";
-import { useNavigate } from 'react-router-dom'
 import { animated, useInView } from '@react-spring/web'
 
 type Props = {
