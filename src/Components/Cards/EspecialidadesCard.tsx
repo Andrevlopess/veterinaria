@@ -1,5 +1,5 @@
-import { IEspecialidades } from "../../Types/MainJobs";
 import { useNavigate } from 'react-router-dom'
+import { IEspecialidades } from '../../Types/Types';
 
 type Props = {
     esp: IEspecialidades;
