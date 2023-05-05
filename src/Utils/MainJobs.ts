@@ -1,4 +1,4 @@
-import { IMainJobs } from "../Types/MainJobs";
+import { IMainJobs } from '../Types/Types';
 import castration from '../assets/castration.svg';
 import hospitalization from '../assets/hospitalization.svg';
 import vaccination from '../assets/vaccination.svg';

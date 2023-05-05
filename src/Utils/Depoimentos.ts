@@ -1,4 +1,4 @@
-import { IDepoi } from "../Types/Depoimentos";
+import { IDepoi } from "../Types/Types";
 
 export const depoimentos: IDepoi[] = [
 

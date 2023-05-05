@@ -2,6 +2,7 @@ import { FiMenu } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import HeaderDrawer from './HeaderDrawer';
+import Logo from '../../assets/Logo.svg'
 
 export default function Header() {
 
@@ -14,7 +15,9 @@ export default function Header() {
     <div className="flex md:justify-around justify-between items-center p-10 border-b-2 ">
       <button
         onClick={() => navigate("/")}
-      >logo</button>
+      >
+        <img src={Logo}/>
+      </button>
       <div className="hidden md:flex gap-6 items-center">
         <button
           onClick={() => navigate("/sobre-nós")}

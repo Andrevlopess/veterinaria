@@ -23,11 +23,6 @@ export default function AboutUsPage() {
                 </div>
                 <div className="flex flex-col justify-center md:px-16 md:py-24 px-4 py-10 border-y-2 items-center ">
                     <text className="md:text-6xl text-4xl text-white text-center font-bold py-10">Eleito 4 vezes seguidas a melhor clinica veterinária de Jundiaí</text>
-
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
-                       
-                    </div>
-
                 </div>
                 <div className="flex flex-col justify-center md:px-16 md:py-24 px-4 py-10 ">
                     <text className="md:text-9xl text-5xl text-white text-center  font-bold">Equipe</text>

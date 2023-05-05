@@ -1,5 +1,5 @@
-import { IDepoi } from "../../Types/Depoimentos";
 import { animated, useInView } from '@react-spring/web'
+import { IDepoi } from '../../Types/Types';
 
 type Props = {
     dep: IDepoi;

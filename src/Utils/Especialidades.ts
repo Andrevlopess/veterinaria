@@ -1,10 +1,10 @@
-import { IEspecialidades } from "../Types/MainJobs";
 import ClinicoGeral from '../assets/clinicoGeral.svg'
 import Cardiologia from '../assets/Cardiologia.svg'
 import Radiologia from '../assets/Radiologia.svg'
 import Ortopedia from '../assets/Ortopedia.svg'
 import ExamesLaboratoriais from '../assets/ExamesLaboratoriais.svg'
 import Ultrassonografia from '../assets/Ultrassonografia.svg'
+import { IEspecialidades } from '../Types/Types'
 
 
 export const especialidades: IEspecialidades[] = [

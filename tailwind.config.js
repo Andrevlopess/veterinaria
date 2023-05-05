@@ -11,6 +11,7 @@ export default {
       },
       colors:{
         'dark-green': "#024953",
+        "light-blue": "#D5E5F4"
       },
       boxShadow:{
         '5xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
