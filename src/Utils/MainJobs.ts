@@ -7,16 +7,16 @@ export const mainJobs: IMainJobs[] = [
     {
       img: castration,
       title: "Castração",
-      description: "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesett"
+      description: "A castração tem várias indicações tanto para machos como para fêmeas. Para as fêmeas que não terão atividade reprodutiva (cujos tutores não tem intenção de procriar), a primeira indicação é para evitar a ocorrência do cio e de gestações indesejadas"
     },
     {
       img: vaccination,
       title: "Vacinação",
-      description: "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesett"
+      description: "Manter à carteira de vacinação do seu pet atualizada é fundamental para a prevenção de doenças. Fique atento para às indicações de cada vacina, assim como, as datas de vencimento."
     },
     {
       img: hospitalization,
       title: "Internação",
-      description: "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesett"
+      description: "Todos os animais internados são monitorados e supervisionados em período integral por um médico veterinário. Desta forma os cuidados e procedimentos necessários são feitos de forma rápida e eficaz para a completa recuperação dos pacientes."
     }
   ]

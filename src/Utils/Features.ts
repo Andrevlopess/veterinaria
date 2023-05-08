@@ -3,22 +3,18 @@ import { IFeatures } from "../Types/Types";
 export const Features: IFeatures[] = [
     {
         title: "Tradição",
-        icon: "",
-        description : "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+        description : "Há mais de 30 anos cuidando de nosso animais com muito amor."
     },
     {
         title: "Segurança",
-        icon: "",
-        description : "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+        description : "Infraestrutura e equipamentos que garantirão uma maior segurança para seu animal."
     },
     {
         title: "Variedades",
-        icon: "",
-        description : "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+        description : "Atendemos todos os tipos de animais por mais exótico que seja, estamos sempre prontos."
     },
     {
         title: "Confiança",
-        icon: "",
-        description : "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+        description : "Mais de 10 mil animais já confiaram em nossos serviços e passaram pela Andre's vet"
     },
 ]

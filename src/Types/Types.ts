@@ -12,7 +12,6 @@ export interface IEspecialidades {
 
 export interface IFeatures {
   title: string;
-  icon: string;
   description: string;
 }
 

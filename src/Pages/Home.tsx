@@ -14,6 +14,7 @@ import { Features } from "../Utils/Features";
 import FeaturesCard from "../Components/Cards/FeaturesCard";
 import { faqs } from "../Utils/FAQs";
 import FAQAccordion from "../Components/FAQAccordion";
+import FAB from "../Components/FAB";
 
 function Home() {
 
@@ -24,7 +25,7 @@ function Home() {
     <>
       <div className='bg-blue-500 font-display'>
         <Header />
-
+        <FAB/>
         <div className="pt-8 flex flex-wrap-reverse justify-around items-center">
           <img src={DogBanner} alt="React Logo" />
           <animated.div
@@ -57,20 +58,20 @@ function Home() {
           })}
         </div>
 
-        <div className="flex bg-light-blue flex-wrap-reverse gap-8 items-center">
-          <img src={Dogs} alt="Image of a dog and a cat" />
-          <div className="grid lg:grid-cols-2 items-center lg:w-1/2 gap-x-4">
+        <div className="flex flex-col bg-light-blue items-center px-6 pt-12">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 items-center gap-4">
             {Features.map(feature => {
               return (
                 <FeaturesCard feature={feature} />
               )
             })}
           </div>
+          <img src={Dogs} alt="Image of dogs" className="" />
         </div>
 
 
 
-        <div className="bg-blue-500 flex flex-col p-4 md:p-20 my-16 gap-10">
+        <div className="bg-blue-500 flex flex-col p-4 md:p-20 my-12 gap-12">
           <div className="flex flex-col gap-4 items-center justify-center">
             <text className="text-md font-bold text-slate-300">FAQ's</text>
             <text className="text-5xl font-bold text-slate-100 text-center">Perguntas frequentes</text>
@@ -135,7 +136,7 @@ function Home() {
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14672.58423521109!2d-46.87363456163939!3d-23.16486872105062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682968359220!5m2!1spt-BR!2sbr" width="800" height="600" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
             className="shadow-2xl md:flex hidden"
           />
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14672.58423521109!2d-46.87363456163939!3d-23.16486872105062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682968359220!5m2!1spt-BR!2sbr" width="250" height="180" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14672.58423521109!2d-46.87363456163939!3d-23.16486872105062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682968359220!5m2!1spt-BR!2sbr" width="350" height="280" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
             className="shadow-2xl md:hidden flex"
           />
 
