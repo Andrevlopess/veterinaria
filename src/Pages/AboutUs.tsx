@@ -12,11 +12,11 @@ export default function AboutUsPage() {
                 <p className="md:text-6xl text-4xl text-white text-center  font-bold">Desde 2002 trabalhando com qualidade, conforto e segurança para nosso animais e clientes.</p>
 
                 <div className="grid md:grid-cols-2 gap-20 md:py-16 py-6 ">
-                    <div className="flex flex-col shadow-xl rounded-sm hover:shadow-5xl hover:scale-105 transition bg-white">
+                    <div className="flex flex-col shadow-xl rounded-sm hover:shadow-5xl transition bg-white">
                         <img src={castration} alt="castrationImage" />
-                        <text className="text-zinc-900 text-2xl py-10 px-4 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque, provident debitis fugiatl Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ullam sunt nihil quae temporibus. Corrupti officia ipsum, labore ea omnis autem qui natus facilis placeat similique eligendi possimus magni in!</text>
+                        <text className="text-zinc-900 text-2xl py-10 px-4 leading-relaxed">Desde 2002, a nossa clínica veterinária tem sido um local de cuidado e amor pelos animais. Com uma equipe dedicada de profissionais apaixonados por cuidar de seus pets, oferecemos serviços de alta qualidade e atendimento personalizado. Nosso compromisso é proporcionar o melhor cuidado veterinário, promovendo a saúde e o bem-estar dos animais de estimação. </text>
                     </div>
-                    <div className="flex flex-col shadow-xl rounded-sm hover:shadow-5xl hover:scale-105 transition bg-white">
+                    <div className="flex flex-col shadow-xl rounded-sm hover:shadow-5xl transition bg-white">
                         <img src={vaccination} alt="castrationImage" />
                         <text className="text-zinc-900 text-2xl py-10 px-4 leading-relaxed">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam neque, provident debitis fugiatl Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ullam sunt nihil quae temporibus. Corrupti officia ipsum, labore ea omnis autem qui natus facilis placeat similique eligendi possimus magni in!</text>
                     </div>

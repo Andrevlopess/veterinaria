@@ -25,7 +25,7 @@ function Home() {
     <>
       <div className='bg-blue-500 font-display'>
         <Header />
-        <FAB/>
+        <FAB />
         <div className="pt-8 flex flex-wrap-reverse justify-around items-center">
           <img src={DogBanner} alt="React Logo" />
           <animated.div
@@ -86,13 +86,15 @@ function Home() {
 
           <div className="bg-slate-100 rounded-md flex justify-between p-16 md:p-20 flex-wrap gap-4">
             <div className="flex flex-col gap-4">
-              <text className="text-5xl font-bold text-zinc-900">Agende sua consulta já</text>
-              <text className="text-2xl font-bold text-zinc-800">Traga seu bichinho de estimação para nós!</text>
+              <text className="text-5xl font-bold text-zinc-900">Especialidades</text>
+              <text className="text-2xl font-bold text-zinc-800">
+                Veja a especialidade que você está precisando.
+              </text>
             </div>
             <button
-              onClick={() => nav("/agendar-consulta")}
+              onClick={() => nav("/especialidades")}
               className=" w-full lg:w-auto px-10 py-4 gap-4 bg-blue-500 rounded-sm flex justify-between items-center shadow-lg hover:shadow-5xl transition ">
-              <text className="text-white text-2xl">Agendar consulta</text>
+              <text className="text-white text-2xl">Ver especialidades</text>
               <FiChevronRight size={20} color="#fff" />
             </button>
           </div>
@@ -115,12 +117,19 @@ function Home() {
               }
             </div>
           </div>
-
+          <div className="bg-slate-100 rounded-md flex justify-between p-16 md:p-20 flex-wrap gap-4">
+            <div className="flex flex-col gap-4">
+              <text className="text-5xl font-bold text-zinc-900">Agende sua consulta já</text>
+              <text className="text-2xl font-bold text-zinc-800">Traga seu bichinho de estimação para nós!</text>
+            </div>
+            <button
+              onClick={() => nav("/agendar-consulta")}
+              className=" w-full lg:w-auto px-10 py-4 gap-4 bg-blue-500 rounded-sm flex justify-between items-center shadow-lg hover:shadow-5xl transition ">
+              <text className="text-white text-2xl">Agendar consulta</text>
+              <FiChevronRight size={20} color="#fff" />
+            </button>
+          </div>
         </div>
-
-
-
-
 
 
         <div className="flex items-center flex-col bg-slate-100 justify-center py-16 px-10 gap-10">

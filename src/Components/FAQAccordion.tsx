@@ -11,10 +11,11 @@ export default function FAQAccordion({ faq }: Props) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-           <div
+           <button
+
             onClick={() => setIsOpen(!isOpen)}
             className="flex flex-col gap-8 border-b-2 border-white py-4 ease-in-out">
-            <div className="flex justify-between gap-10 items-center">
+            <div className="flex justify-between gap-10 items-center w-full">
                 <text className=" text-xl md:text-2xl text-slate-100 font-bold">
                     {faq.question}
                 </text>
@@ -27,10 +28,10 @@ export default function FAQAccordion({ faq }: Props) {
 
             {
                 isOpen &&
-                <text className=" text-md md:text-lg text-slate-100">
+                <text className=" text-md md:text-lg text-slate-100 text-start">
                     {faq.response}
                 </text>
             }
-        </div> 
+        </button> 
     )
 }
