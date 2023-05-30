@@ -1,4 +1,5 @@
 export interface IMainJobs {
+  id:number;
   img: string;
   title: string;
   description: string;

@@ -27,7 +27,7 @@ function Home() {
         <Header />
         <FAB />
         <div className="pt-8 flex flex-wrap-reverse justify-around items-center">
-          <img src={DogBanner} alt="React Logo" />
+          <img src={DogBanner} alt="Logo" />
           <animated.div
 
             style={{
@@ -38,7 +38,7 @@ function Home() {
             ref={refText}
             className="flex flex-col p-10 gap-4 sm:w-1/2 w-full items-start ">
             <text className="text-4xl sm:text-6xl text-white font-bold">Centro médico veterinário André's Vet</text>
-            <text className="text-2xl sx:text-4xl text-white">Onde seu animal de estimação é nosso maior cuidado e responsabilidade, com muito amor e comprometimentos cuidamos do seu animal de estimação!</text>
+            <text className="text-xl sx:text-4xl text-white">Aqui o seu animal de estimação é nosso maior cuidado e responsabilidade.</text>
             <button
               onClick={() => nav("/agendar-consulta")}
               className=" w-full lg:w-auto px-12 py-8 gap-10 bg-blue-700 rounded-sm flex justify-between items-center shadow-md">
@@ -50,15 +50,15 @@ function Home() {
 
 
 
-        <div className="flex xl:flex-nowrap flex-wrap items-center bg-slate-100 justify-center py-16 px-10">
+        <div className="flex xl:flex-nowrap flex-wrap items-center bg-slate-100 justify-center py-16 md:px-10 px-4">
           {mainJobs.map((job) => {
             return (
-              <MainJobsCard job={job} />
+              <MainJobsCard job={job} key={job.id}/>
             )
           })}
         </div>
 
-        <div className="flex flex-col bg-light-blue items-center px-6 pt-12">
+        <div className="flex flex-col bg-light-blue items-center pt-16 md:px-10 px-4">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 items-center gap-4">
             {Features.map(feature => {
               return (
@@ -84,17 +84,17 @@ function Home() {
             })}
           </div>
 
-          <div className="bg-slate-100 rounded-md flex justify-between p-16 md:p-20 flex-wrap gap-4">
+          <div className="bg-slate-100 rounded-md flex justify-between p-6 md:p-20 flex-wrap gap-4">
             <div className="flex flex-col gap-4">
-              <text className="text-5xl font-bold text-zinc-900">Especialidades</text>
-              <text className="text-2xl font-bold text-zinc-800">
+              <text className="sm:text-5xl text-2xl font-bold text-zinc-900">Especialidades</text>
+              <text className="sm:text-2xl text-lg font-bold text-zinc-800">
                 Veja a especialidade que você está precisando.
               </text>
             </div>
             <button
               onClick={() => nav("/especialidades")}
-              className=" w-full lg:w-auto px-10 py-4 gap-4 bg-blue-500 rounded-sm flex justify-between items-center shadow-lg hover:shadow-5xl transition ">
-              <text className="text-white text-2xl">Ver especialidades</text>
+              className=" w-full lg:w-auto sm:px-10 px-4 py-4 gap-4 bg-blue-500 rounded-sm flex justify-between items-center shadow-lg hover:shadow-5xl transition ">
+              <text className="text-white sm:text-2xl text-lg">Ver especialidades</text>
               <FiChevronRight size={20} color="#fff" />
             </button>
           </div>
@@ -107,7 +107,7 @@ function Home() {
               <text className="text-4xl sm:text-9xl text-white mx-10 font-bold italic">TOS</text>
 
             </div>
-            <div className="grid lg:grid-cols-2 gap-10 p-6">
+            <div className="grid lg:grid-cols-2 gap-10 p-4">
               {
                 depoimentos.map(dep => {
                   return (
@@ -117,15 +117,15 @@ function Home() {
               }
             </div>
           </div>
-          <div className="bg-slate-100 rounded-md flex justify-between p-16 md:p-20 flex-wrap gap-4">
+          <div className="bg-slate-100 rounded-md flex justify-between p-6 md:p-20 flex-wrap gap-4">
             <div className="flex flex-col gap-4">
-              <text className="text-5xl font-bold text-zinc-900">Agende sua consulta já</text>
-              <text className="text-2xl font-bold text-zinc-800">Traga seu bichinho de estimação para nós!</text>
+              <text className="sm:text-5xl text-2xl font-bold text-zinc-900">Agende sua consulta já</text>
+              <text className="sm:text-2xl text-lg font-bold text-zinc-800">Traga seu bichinho de estimação para nós!</text>
             </div>
             <button
               onClick={() => nav("/agendar-consulta")}
               className=" w-full lg:w-auto px-10 py-4 gap-4 bg-blue-500 rounded-sm flex justify-between items-center shadow-lg hover:shadow-5xl transition ">
-              <text className="text-white text-2xl">Agendar consulta</text>
+              <text className="text-white sm:text-2xl text-lg">Agendar consulta</text>
               <FiChevronRight size={20} color="#fff" />
             </button>
           </div>
@@ -145,11 +145,11 @@ function Home() {
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14672.58423521109!2d-46.87363456163939!3d-23.16486872105062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682968359220!5m2!1spt-BR!2sbr" width="800" height="600" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
             className="shadow-2xl md:flex hidden"
           />
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14672.58423521109!2d-46.87363456163939!3d-23.16486872105062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682968359220!5m2!1spt-BR!2sbr" width="350" height="280" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14672.58423521109!2d-46.87363456163939!3d-23.16486872105062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1682968359220!5m2!1spt-BR!2sbr" width="300" height="200" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
             className="shadow-2xl md:hidden flex"
           />
 
-          <text className="md:text-5xl text-3xl text-zinc-900 py-14 text-center font-semibold">
+          <text className="sm:text-5xl text-2xl text-zinc-900 py-14 text-center font-semibold">
             Av. fictícia, 000, Jundiaí, SP
           </text>
         </div>
